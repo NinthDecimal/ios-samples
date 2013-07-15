@@ -22,6 +22,7 @@ NSString *const kNotificationIntegrated = @"Integrated Notification";
 
 @implementation ViewController
 @synthesize pickerView,dataArray,savedPoptart;
+@synthesize notifType,redeemButton,momentID,MomentField;
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -10,19 +10,15 @@
 #import <KiipSDK/KiipSDK.h>
 #import "AppDelegate.h"
 #import "KPCustomButton.h"
-@interface ViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource,UITextFieldDelegate>{
-    UIPickerView *pickerView;
-    NSMutableArray *dataArray;
-    NSString *notifType;
-    KPPoptart *savedPoptart;
-    KPCustomButton * redeemButton;
-    NSString *momentID;
-    IBOutlet UITextField *MomentField;
-}
+@interface ViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource,UITextFieldDelegate>
 
 @property (nonatomic, retain) UIPickerView *pickerView;
 @property (nonatomic, retain) NSMutableArray *dataArray;
-@property (nonatomic, strong) KPPoptart *savedPoptart;
+@property (nonatomic, retain) NSString *notifType;
+@property (nonatomic, retain) KPPoptart *savedPoptart;
+@property (nonatomic, retain) KPCustomButton * redeemButton;
+@property (nonatomic, retain) NSString *momentID;
+@property (nonatomic, retain) IBOutlet UITextField *MomentField;
 
 @end
 
