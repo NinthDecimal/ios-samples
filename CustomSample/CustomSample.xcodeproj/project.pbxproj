@@ -33,7 +33,7 @@
 
 /* Begin PBXFileReference section */
 		5E141FF91794705900BBED94 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = resources/button.png; sourceTree = "<group>"; };
-		5E141FFA1794705900BBED94 /* button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button@2x.png"; path = "resources/button@2x.png"; sourceTree = "<group>"; };
+		5E141FFA1794705900BBED94 /* button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button@2x.png"; path = "Resources/button@2x.png"; sourceTree = "<group>"; };
 		5E141FFB1794705900BBED94 /* CustomBanner-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CustomBanner-ipad.png"; path = "resources/CustomBanner-ipad.png"; sourceTree = "<group>"; };
 		5E141FFC1794705900BBED94 /* notificationCustom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = notificationCustom.png; path = resources/notificationCustom.png; sourceTree = "<group>"; };
 		5E141FFD1794705900BBED94 /* notificationCustom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "notificationCustom@2x.png"; path = "resources/notificationCustom@2x.png"; sourceTree = "<group>"; };
@@ -57,8 +57,8 @@
 		5EE35C61178CD6F800C18D70 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5EE35C6D178CD86100C18D70 /* KPCustomNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPCustomNotificationView.h; sourceTree = "<group>"; };
 		5EE35C6E178CD86100C18D70 /* KPCustomNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPCustomNotificationView.m; sourceTree = "<group>"; };
-		5EF15BD0178F5AF90087EAAB /* KPCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KPCustomButton.h; path = ../KPCustomButton.h; sourceTree = "<group>"; };
-		5EF15BD1178F5AF90087EAAB /* KPCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KPCustomButton.m; path = ../KPCustomButton.m; sourceTree = "<group>"; };
+		5EF15BD0178F5AF90087EAAB /* KPCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPCustomButton.h; sourceTree = "<group>"; };
+		5EF15BD1178F5AF90087EAAB /* KPCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPCustomButton.m; sourceTree = "<group>"; };
 		EED2F98B1794A5CE00433F73 /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KiipSDK.framework; path = ../KiipSDK.framework; sourceTree = "<group>"; };
 		EED2F98D1794A5DE00433F73 /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KiipSDKResources.bundle; path = ../KiipSDK.framework/Resources/KiipSDKResources.bundle; sourceTree = "<group>"; };
 		EED2F98F1794A5F400433F73 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -86,7 +86,6 @@
 		5EA941F3178CB88C000A22F2 = {
 			isa = PBXGroup;
 			children = (
-				5E640D2417947287001859EB /* Default-568h@2x.png */,
 				5EA94205178CB88D000A22F2 /* CustomSample */,
 				5EA941FE178CB88D000A22F2 /* Frameworks */,
 				5EA941FD178CB88D000A22F2 /* Products */,
@@ -126,6 +125,10 @@
 				5EA9421D178CB88D000A22F2 /* ViewController.h */,
 				5EA9421E178CB88D000A22F2 /* ViewController.m */,
 				5EA94217178CB88D000A22F2 /* MainStoryboard.storyboard */,
+				5EE35C6D178CD86100C18D70 /* KPCustomNotificationView.h */,
+				5EE35C6E178CD86100C18D70 /* KPCustomNotificationView.m */,
+				5EF15BD0178F5AF90087EAAB /* KPCustomButton.h */,
+				5EF15BD1178F5AF90087EAAB /* KPCustomButton.m */,
 				5EA94206178CB88D000A22F2 /* Supporting Files */,
 				5ECFD32B1790B44100557F08 /* Resources */,
 			);
@@ -135,14 +138,11 @@
 		5EA94206178CB88D000A22F2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5EE35C6D178CD86100C18D70 /* KPCustomNotificationView.h */,
-				5EE35C6E178CD86100C18D70 /* KPCustomNotificationView.m */,
-				5EF15BD0178F5AF90087EAAB /* KPCustomButton.h */,
-				5EF15BD1178F5AF90087EAAB /* KPCustomButton.m */,
 				5EA9420D178CB88D000A22F2 /* CustomSample-Prefix.pch */,
 				5EA9420B178CB88D000A22F2 /* main.m */,
 				5EA94207178CB88D000A22F2 /* CustomSample-Info.plist */,
 				5EA94208178CB88D000A22F2 /* InfoPlist.strings */,
+				5E640D2417947287001859EB /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
