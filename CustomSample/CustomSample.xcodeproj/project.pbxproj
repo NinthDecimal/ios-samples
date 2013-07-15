@@ -22,26 +22,15 @@
 		5EA94219178CB88D000A22F2 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA94217178CB88D000A22F2 /* MainStoryboard_iPhone.storyboard */; };
 		5EA9421C178CB88D000A22F2 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA9421A178CB88D000A22F2 /* MainStoryboard_iPad.storyboard */; };
 		5EA9421F178CB88D000A22F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA9421E178CB88D000A22F2 /* ViewController.m */; };
-		5EA94227178CB88D000A22F2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA94226178CB88D000A22F2 /* SenTestingKit.framework */; };
-		5EA94228178CB88D000A22F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA941FF178CB88D000A22F2 /* UIKit.framework */; };
-		5EA94229178CB88D000A22F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA94201178CB88D000A22F2 /* Foundation.framework */; };
 		5EE35C5E178CD6E500C18D70 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE35C5D178CD6E500C18D70 /* CoreTelephony.framework */; };
 		5EE35C60178CD6F000C18D70 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE35C5F178CD6F000C18D70 /* QuartzCore.framework */; };
 		5EE35C62178CD6F800C18D70 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE35C61178CD6F800C18D70 /* SystemConfiguration.framework */; };
-		5EE35C6F178CD86100C18D70 /* KPCustomNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE35C6E178CD86100C18D70 /* KPCustomNotificationView.m */; };
 		5EE35C70178CD8FE00C18D70 /* KPCustomNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE35C6E178CD86100C18D70 /* KPCustomNotificationView.m */; };
 		5EF15BD2178F5AF90087EAAB /* KPCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF15BD1178F5AF90087EAAB /* KPCustomButton.m */; };
+		EED2F98C1794A5CE00433F73 /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED2F98B1794A5CE00433F73 /* KiipSDK.framework */; };
+		EED2F98E1794A5DE00433F73 /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EED2F98D1794A5DE00433F73 /* KiipSDKResources.bundle */; };
+		EED2F9901794A5F400433F73 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED2F98F1794A5F400433F73 /* AdSupport.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5EA9422A178CB88D000A22F2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5EA941F4178CB88C000A22F2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5EA941FB178CB88D000A22F2;
-			remoteInfo = SimpleSample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5E141FF91794705900BBED94 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = resources/button.png; sourceTree = "<group>"; };
@@ -64,7 +53,6 @@
 		5EA9421B178CB88D000A22F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		5EA9421D178CB88D000A22F2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5EA9421E178CB88D000A22F2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5EA94225178CB88D000A22F2 /* CustomSampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomSampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA94226178CB88D000A22F2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5EE35C5D178CD6E500C18D70 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		5EE35C5F178CD6F000C18D70 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -73,6 +61,9 @@
 		5EE35C6E178CD86100C18D70 /* KPCustomNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPCustomNotificationView.m; sourceTree = "<group>"; };
 		5EF15BD0178F5AF90087EAAB /* KPCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KPCustomButton.h; path = ../KPCustomButton.h; sourceTree = "<group>"; };
 		5EF15BD1178F5AF90087EAAB /* KPCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KPCustomButton.m; path = ../KPCustomButton.m; sourceTree = "<group>"; };
+		EED2F98B1794A5CE00433F73 /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KiipSDK.framework; path = ../KiipSDK.framework; sourceTree = "<group>"; };
+		EED2F98D1794A5DE00433F73 /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KiipSDKResources.bundle; path = ../KiipSDK.framework/Resources/KiipSDKResources.bundle; sourceTree = "<group>"; };
+		EED2F98F1794A5F400433F73 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,22 +71,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED2F9901794A5F400433F73 /* AdSupport.framework in Frameworks */,
 				5EE35C62178CD6F800C18D70 /* SystemConfiguration.framework in Frameworks */,
 				5EE35C60178CD6F000C18D70 /* QuartzCore.framework in Frameworks */,
 				5EE35C5E178CD6E500C18D70 /* CoreTelephony.framework in Frameworks */,
 				5EA94200178CB88D000A22F2 /* UIKit.framework in Frameworks */,
 				5EA94202178CB88D000A22F2 /* Foundation.framework in Frameworks */,
 				5EA94204178CB88D000A22F2 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EA94221178CB88D000A22F2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5EA94227178CB88D000A22F2 /* SenTestingKit.framework in Frameworks */,
-				5EA94228178CB88D000A22F2 /* UIKit.framework in Frameworks */,
-				5EA94229178CB88D000A22F2 /* Foundation.framework in Frameworks */,
+				EED2F98C1794A5CE00433F73 /* KiipSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				5EA941FC178CB88D000A22F2 /* CustomSample.app */,
-				5EA94225178CB88D000A22F2 /* CustomSampleTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +106,9 @@
 		5EA941FE178CB88D000A22F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EED2F98B1794A5CE00433F73 /* KiipSDK.framework */,
+				EED2F98D1794A5DE00433F73 /* KiipSDKResources.bundle */,
+				EED2F98F1794A5F400433F73 /* AdSupport.framework */,
 				5EE35C5D178CD6E500C18D70 /* CoreTelephony.framework */,
 				5EE35C61178CD6F800C18D70 /* SystemConfiguration.framework */,
 				5EE35C5F178CD6F000C18D70 /* QuartzCore.framework */,
@@ -197,25 +182,6 @@
 			productReference = 5EA941FC178CB88D000A22F2 /* CustomSample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5EA94224178CB88D000A22F2 /* CustomSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5EA9423A178CB88D000A22F2 /* Build configuration list for PBXNativeTarget "CustomSampleTests" */;
-			buildPhases = (
-				5EA94220178CB88D000A22F2 /* Sources */,
-				5EA94221178CB88D000A22F2 /* Frameworks */,
-				5EA94222178CB88D000A22F2 /* Resources */,
-				5EA94223178CB88D000A22F2 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5EA9422B178CB88D000A22F2 /* PBXTargetDependency */,
-			);
-			name = CustomSampleTests;
-			productName = SimpleSampleTests;
-			productReference = 5EA94225178CB88D000A22F2 /* CustomSampleTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -238,7 +204,6 @@
 			projectRoot = "";
 			targets = (
 				5EA941FB178CB88D000A22F2 /* CustomSample */,
-				5EA94224178CB88D000A22F2 /* CustomSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,33 +222,11 @@
 				5E1420011794705900BBED94 /* notificationCustom.png in Resources */,
 				5E1420021794705900BBED94 /* notificationCustom@2x.png in Resources */,
 				5E640D2517947287001859EB /* Default-568h@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EA94222178CB88D000A22F2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				EED2F98E1794A5DE00433F73 /* KiipSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5EA94223178CB88D000A22F2 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5EA941F8178CB88D000A22F2 /* Sources */ = {
@@ -298,23 +241,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5EA94220178CB88D000A22F2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5EE35C6F178CD86100C18D70 /* KPCustomNotificationView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5EA9422B178CB88D000A22F2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5EA941FB178CB88D000A22F2 /* CustomSample */;
-			targetProxy = 5EA9422A178CB88D000A22F2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5EA94208178CB88D000A22F2 /* InfoPlist.strings */ = {
@@ -408,10 +335,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/..\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SimpleSample/CustomSample-Prefix.pch";
-				INFOPLIST_FILE = "SimpleSample/CustomSample-Info.plist";
+				GCC_PREFIX_HEADER = "CustomSample/CustomSample-Prefix.pch";
+				INFOPLIST_FILE = "CustomSample/CustomSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = CustomSample;
 				WRAPPER_EXTENSION = app;
@@ -424,47 +352,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/..\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SimpleSample/CustomSample-Prefix.pch";
-				INFOPLIST_FILE = "SimpleSample/CustomSample-Info.plist";
+				GCC_PREFIX_HEADER = "CustomSample/CustomSample-Prefix.pch";
+				INFOPLIST_FILE = "CustomSample/CustomSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = CustomSample;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		5EA9423B178CB88D000A22F2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleSample.app/SimpleSample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SimpleSample/SimpleSample-Prefix.pch";
-				INFOPLIST_FILE = "SimpleSampleTests/SimpleSampleTests-Info.plist";
-				PRODUCT_NAME = CustomSampleTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		5EA9423C178CB88D000A22F2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleSample.app/SimpleSample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SimpleSample/SimpleSample-Prefix.pch";
-				INFOPLIST_FILE = "SimpleSampleTests/SimpleSampleTests-Info.plist";
-				PRODUCT_NAME = CustomSampleTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -485,15 +380,6 @@
 			buildConfigurations = (
 				5EA94238178CB88D000A22F2 /* Debug */,
 				5EA94239178CB88D000A22F2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5EA9423A178CB88D000A22F2 /* Build configuration list for PBXNativeTarget "CustomSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5EA9423B178CB88D000A22F2 /* Debug */,
-				5EA9423C178CB88D000A22F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
