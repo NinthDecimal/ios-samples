@@ -9,11 +9,11 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
-@synthesize notificationIcon,notificationTitle,notificationMessage;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    Kiip *kiip = [[Kiip alloc] initWithAppKey:@"Put your app key Here" andSecret:@"Put your app secret here"];
+    Kiip *kiip = [[Kiip alloc] initWithAppKey:KP_APP_KEY andSecret:KP_APP_SECRET];
     kiip.delegate = self;
     [Kiip setSharedInstance:kiip];
     
@@ -51,6 +51,50 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)showError:(NSError *)error {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    [alert show];
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark KiipDelegate
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+- (void) kiip:(Kiip *)kiip didStartSessionWithPoptart:(KPPoptart *)poptart error:(NSError *)error {
+    NSLog(@"kiip:didStartSessionWithPoptart:%@ error:%@", poptart, error);
+    
+    if (error) {
+        [self showError:error];
+    }
+    
+    // Since we've implemented this delegate method, Kiip will no longer show the poptart automatically
+    [poptart show];
+}
+
+- (void) kiip:(Kiip *)kiip didEndSessionWithError:(NSError *)error {
+    NSLog(@"kiip:didEndSessionWithError:%@", error);
+    
+    if (error) {
+        [self showError:error];
+    }
+}
+
+- (void) kiip:(Kiip *)kiip didStartSwarm:(NSString *)leaderboardId {
+    NSLog(@"kiip:didStartSwarm:%@", leaderboardId);
+    
+    // Enter "swarm" mode
+    // http://docs.kiip.com/en/guide/swarm.html
+}
+
+- (void) kiip:(Kiip *)kiip didReceiveContent:(NSString *)contentId quantity:(int)quantity transactionId:(NSString *)transactionId signature:(NSString *)signature {
+    NSLog(@"kiip:didReceiveContent:%@ quantity:%d transactionId:%@ signature:%@", contentId, quantity, transactionId, signature);
+    
+    // Add quantity amount of content to player's profile
+    // e.g +20 coins to user's wallet
+    // http://docs.kiip.com/en/guide/android.html#getting_virtual_rewards
 }
 
 @end
