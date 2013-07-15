@@ -328,7 +328,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomSample/CustomSample-Prefix.pch";
 				INFOPLIST_FILE = "CustomSample/CustomSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = CustomSample;
 				WRAPPER_EXTENSION = app;
 			};
@@ -345,7 +345,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomSample/CustomSample-Prefix.pch";
 				INFOPLIST_FILE = "CustomSample/CustomSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = CustomSample;
 				WRAPPER_EXTENSION = app;
 			};
