@@ -147,8 +147,7 @@
 				5EA94206178CB88D000A22F2 /* Supporting Files */,
 				5ECFD32B1790B44100557F08 /* Resources */,
 			);
-			name = CustomSample;
-			path = SimpleSample;
+			path = CustomSample;
 			sourceTree = "<group>";
 		};
 		5EA94206178CB88D000A22F2 /* Supporting Files */ = {
