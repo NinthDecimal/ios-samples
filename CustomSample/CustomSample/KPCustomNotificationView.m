@@ -48,7 +48,7 @@
         self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"notificationCustom.png"]];
     }
     else {
-        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"CustomBanner-ipad.png"]];
+        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"notificationCustom@2x.png"]];
     }
     
     self.frame = CGRectMake(0, 0, CGRectGetWidth(self.superview.bounds), HEIGHT);
