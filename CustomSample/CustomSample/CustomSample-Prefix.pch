@@ -12,3 +12,6 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#define KP_APP_KEY    @"my_app_key"
+#define KP_APP_SECRET @"my_app_secret"

@@ -14,11 +14,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) KPCustomNotificationView *customNotificationView;
-@property (strong, nonatomic) UILabel *notificationTitle;
-@property (strong, nonatomic) UILabel *notificationMessage;
-@property (strong, nonatomic) UIImageView *notificationIcon;
 
 -(void)toggleNotification:(BOOL)enabled;
--(void)addInfo:(KPPoptart *)poptart;
--(void)addInfo:(KPPoptart *)poptart toButton:(UIButton*)button;
+
 @end
