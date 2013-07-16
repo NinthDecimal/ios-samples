@@ -123,7 +123,7 @@ NSString *const kNotificationIntegrated = @"Integrated Notification";
 }
 
 //hides keyboard when user hits "return"
--(BOOL) textFieldShouldReturn:(UITextField *)textField {
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
 }
