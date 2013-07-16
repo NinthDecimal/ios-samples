@@ -42,13 +42,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <pickerView contentMode="scaleToFill" id="vzM-AK-lzw">
+                                <rect key="frame" x="0.0" y="332" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="MomentField" destination="v41-ap-fxY" id="lsT-jH-DdZ"/>
+                        <outlet property="momentField" destination="v41-ap-fxY" id="FUQ-Mu-cWJ"/>
+                        <outlet property="pickerView" destination="vzM-AK-lzw" id="Bxp-uv-OIx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -60,7 +65,10 @@
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="MomentField" candidateClass="UITextField"/>
+                <relationship kind="action" name="callMoment:"/>
+                <relationship kind="action" name="customtapped:"/>
+                <relationship kind="outlet" name="momentField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="pickerView" candidateClass="UIPickerView"/>
             </relationships>
         </class>
     </classes>

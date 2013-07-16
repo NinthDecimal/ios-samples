@@ -39,15 +39,8 @@ NSString *const kNotificationIntegrated = @"Integrated Notification";
     
     
     //creating and adding picker view to mainview
-    pickerView = [[UIPickerView alloc] init];
-    [pickerView setDataSource: self];
-    [pickerView setDelegate: self];
-    float screenWidth = [UIScreen mainScreen].bounds.size.width;
-    float screenHeight = [UIScreen mainScreen].bounds.size.height;
-    [pickerView setFrame: CGRectMake(0, screenHeight-200, screenWidth, 180)];
-    pickerView.showsSelectionIndicator = YES;
-    [pickerView selectRow:0 inComponent:0 animated:YES];
-    [self.view addSubview: pickerView];
+    self.pickerView.dataSource = self;
+    self.pickerView.delegate = self;
     
     //setting frame, image, and action of Integrated Notification 
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
