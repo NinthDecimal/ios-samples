@@ -19,13 +19,13 @@
 		5EA9420A178CB88D000A22F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EA94208178CB88D000A22F2 /* InfoPlist.strings */; };
 		5EA9420C178CB88D000A22F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA9420B178CB88D000A22F2 /* main.m */; };
 		5EA94210178CB88D000A22F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA9420F178CB88D000A22F2 /* AppDelegate.m */; };
-		5EA94219178CB88D000A22F2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA94217178CB88D000A22F2 /* MainStoryboard.storyboard */; };
 		5EA9421F178CB88D000A22F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA9421E178CB88D000A22F2 /* ViewController.m */; };
 		5EE35C5E178CD6E500C18D70 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE35C5D178CD6E500C18D70 /* CoreTelephony.framework */; };
 		5EE35C60178CD6F000C18D70 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE35C5F178CD6F000C18D70 /* QuartzCore.framework */; };
 		5EE35C62178CD6F800C18D70 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE35C61178CD6F800C18D70 /* SystemConfiguration.framework */; };
 		5EE35C70178CD8FE00C18D70 /* KPCustomNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE35C6E178CD86100C18D70 /* KPCustomNotificationView.m */; };
 		5EF15BD2178F5AF90087EAAB /* KPCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF15BD1178F5AF90087EAAB /* KPCustomButton.m */; };
+		EE39D14E1795E616005CD821 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE39D14C1795E616005CD821 /* ViewController.xib */; };
 		EED2F98C1794A5CE00433F73 /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED2F98B1794A5CE00433F73 /* KiipSDK.framework */; };
 		EED2F98E1794A5DE00433F73 /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EED2F98D1794A5DE00433F73 /* KiipSDKResources.bundle */; };
 		EED2F9901794A5F400433F73 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED2F98F1794A5F400433F73 /* AdSupport.framework */; };
@@ -48,7 +48,6 @@
 		5EA9420D178CB88D000A22F2 /* CustomSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomSample-Prefix.pch"; sourceTree = "<group>"; };
 		5EA9420E178CB88D000A22F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5EA9420F178CB88D000A22F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5EA94218178CB88D000A22F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		5EA9421D178CB88D000A22F2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5EA9421E178CB88D000A22F2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5EA94226178CB88D000A22F2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -59,6 +58,7 @@
 		5EE35C6E178CD86100C18D70 /* KPCustomNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPCustomNotificationView.m; sourceTree = "<group>"; };
 		5EF15BD0178F5AF90087EAAB /* KPCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPCustomButton.h; sourceTree = "<group>"; };
 		5EF15BD1178F5AF90087EAAB /* KPCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPCustomButton.m; sourceTree = "<group>"; };
+		EE39D14D1795E616005CD821 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = CustomSample/en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		EED2F98B1794A5CE00433F73 /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KiipSDK.framework; path = ../KiipSDK.framework; sourceTree = "<group>"; };
 		EED2F98D1794A5DE00433F73 /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KiipSDKResources.bundle; path = ../KiipSDK.framework/Resources/KiipSDKResources.bundle; sourceTree = "<group>"; };
 		EED2F98F1794A5F400433F73 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -124,7 +124,7 @@
 				5EA9420F178CB88D000A22F2 /* AppDelegate.m */,
 				5EA9421D178CB88D000A22F2 /* ViewController.h */,
 				5EA9421E178CB88D000A22F2 /* ViewController.m */,
-				5EA94217178CB88D000A22F2 /* MainStoryboard.storyboard */,
+				EE39D14C1795E616005CD821 /* ViewController.xib */,
 				5EE35C6D178CD86100C18D70 /* KPCustomNotificationView.h */,
 				5EE35C6E178CD86100C18D70 /* KPCustomNotificationView.m */,
 				5EF15BD0178F5AF90087EAAB /* KPCustomButton.h */,
@@ -211,7 +211,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EA9420A178CB88D000A22F2 /* InfoPlist.strings in Resources */,
-				5EA94219178CB88D000A22F2 /* MainStoryboard.storyboard in Resources */,
 				5E141FFE1794705900BBED94 /* button.png in Resources */,
 				5E141FFF1794705900BBED94 /* button@2x.png in Resources */,
 				5E1420001794705900BBED94 /* CustomBanner-ipad.png in Resources */,
@@ -219,6 +218,7 @@
 				5E1420021794705900BBED94 /* notificationCustom@2x.png in Resources */,
 				5E640D2517947287001859EB /* Default-568h@2x.png in Resources */,
 				EED2F98E1794A5DE00433F73 /* KiipSDKResources.bundle in Resources */,
+				EE39D14E1795E616005CD821 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,12 +248,13 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		5EA94217178CB88D000A22F2 /* MainStoryboard.storyboard */ = {
+		EE39D14C1795E616005CD821 /* ViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5EA94218178CB88D000A22F2 /* en */,
+				EE39D14D1795E616005CD821 /* en */,
 			);
-			name = MainStoryboard.storyboard;
+			name = ViewController.xib;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

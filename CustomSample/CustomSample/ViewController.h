@@ -12,14 +12,13 @@
 #import "KPCustomButton.h"
 @interface ViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource,UITextFieldDelegate>
 
-@property (nonatomic, retain) UIPickerView *pickerView;
-@property (nonatomic, retain) NSMutableArray *dataArray;
+@property (nonatomic, retain) NSArray *dataArray;
 @property (nonatomic, retain) NSString *notifType;
 @property (nonatomic, retain) KPPoptart *savedPoptart;
+
+@property (nonatomic, retain) IBOutlet UITextField *momentField;
 @property (nonatomic, retain) IBOutlet UIPickerView *pickerView;
 @property (nonatomic, retain) KPCustomButton * redeemButton;
-@property (nonatomic, retain) NSString *momentID;
-@property (nonatomic, retain) IBOutlet UITextField *MomentField;
 
 @end
 

@@ -13,6 +13,8 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate,KiipDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UIViewController *viewController;
+
 @property (strong, nonatomic) KPCustomNotificationView *customNotificationView;
 
 -(void)toggleNotification:(BOOL)enabled;
