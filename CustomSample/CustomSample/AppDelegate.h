@@ -18,6 +18,6 @@
 
 @property (strong, nonatomic) KPCustomNotificationView *customNotificationView;
 
--(void)toggleNotification:(BOOL)enabled;
+- (void)toggleCustomNotification:(BOOL)enabled;
 
 @end
