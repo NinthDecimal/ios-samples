@@ -48,7 +48,10 @@
         self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"notificationCustom.png"]];
     }
     else {
-        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"notificationCustom@2x.png"]];
+        UIImage* image = [UIImage imageNamed:@"notificationCustom@2x.png"];
+        UIEdgeInsets insets = UIEdgeInsetsMake(image.size.height/2, image.size.width/2, image.size.height/2, image.size.width/2);
+        image = [image resizableImageWithCapInsets:insets];
+        self.backgroundColor = [UIColor colorWithPatternImage:image];
     }
     
     self.frame = CGRectMake(0, 0, CGRectGetWidth(self.superview.bounds), HEIGHT);
