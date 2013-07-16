@@ -10,8 +10,10 @@
 
 @interface KPCustomNotificationView : KPNotificationView
 
-@property (strong, nonatomic) UILabel *title;
-@property (strong, nonatomic) UILabel *message;
-@property (strong, nonatomic) UIImageView *icon;
+@property (strong, nonatomic) UIImage *background;
+@property (strong, nonatomic) UIFont *titleFont;
+@property (nonatomic)         CGRect titleRect;
+@property (strong, nonatomic) UIFont *messageFont;
+@property (nonatomic)         CGRect messageRect;
 
 @end

@@ -17,56 +17,48 @@
 - (id)initWithFrame:(CGRect)frame {    
     self = [super initWithFrame:frame];
     if (self) {
-        
-        //sets up notification's objects' frames
-        self.icon = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 60, 45)];
-        self.title = [[UILabel alloc]initWithFrame:CGRectMake(90, 9, 200, 20)];
-        self.message = [[UILabel alloc]initWithFrame:CGRectMake(75, 20, 220, 20)];
-        
-        //sets up font size, font type, text color
-        self.title.font = [UIFont boldSystemFontOfSize:13];
-        self.message.font = [UIFont systemFontOfSize:11];
-        self.title.textColor = [UIColor whiteColor];
-        self.message.textColor = [UIColor whiteColor];
-        
-        //sets background color of notification objects
-        self.title.backgroundColor = [UIColor clearColor];
-        self.message.backgroundColor = [UIColor clearColor];
-        self.icon.backgroundColor = [UIColor clearColor];
-        
-        
-        //adds objects to notification
-        [self addSubview:self.title];
-        [self addSubview:self.message];
-        [self addSubview:self.icon];
-
         self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        
+        self.backgroundColor = [UIColor clearColor];
+        self.background = [[UIImage imageNamed:@"button"] stretchableImageWithLeftCapWidth:6 topCapHeight:6];
+        
+        self.titleFont = [UIFont fontWithName:@"AvenirNext-DemiBold" size:12];
+        self.messageFont = [UIFont fontWithName:@"AvenirNext-Medium" size:12];
+        
+        // Fallbacks
+        if (!self.titleFont) {
+            self.titleFont = [UIFont fontWithName:@"HelveticaNeue-Bold" size:11];
+        }
+        if (!self.messageFont) {
+            self.messageFont = [UIFont fontWithName:@"HelveticaNeue-Medium" size:11];
+        }
     }
     return self;
 }
 
 - (void) didMoveToSuperview {
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-    {
-        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"notificationCustom.png"]];
-    }
-    else {
-        UIImage* image = [UIImage imageNamed:@"notificationCustom@2x.png"];
-        UIEdgeInsets insets = UIEdgeInsetsMake(image.size.height/2, image.size.width/2, image.size.height/2, image.size.width/2);
-        image = [image resizableImageWithCapInsets:insets];
-        self.backgroundColor = [UIColor colorWithPatternImage:image];
-    }
-    
     self.frame = CGRectMake(0, 0, CGRectGetWidth(self.superview.bounds), HEIGHT);
+    
+    self.titleRect = CGRectMake(65, 7, CGRectGetWidth(self.bounds) - 65 - 20 - 10, self.titleFont.lineHeight);
+    self.messageRect = CGRectMake(65, 23, CGRectGetWidth(self.bounds) - 65 - 10, self.messageFont.lineHeight);
 }
 
-//called automatically, sets info from poptart to objects
-- (void) setPoptart:(KPPoptart *)poptart {
-    [super setPoptart:poptart];
-    [self.title setText:poptart.notification.title];
-    [self.icon setImage:poptart.notification.icon];
-    [self.message setText:poptart.notification.message];
-
+- (void) drawRect:(CGRect)rect {
+    KPNotification *notification = self.poptart.notification;
+    
+    // Background
+    [self.background drawInRect:self.bounds];
+    
+    // Icon
+    [notification.icon drawInRect:CGRectMake(5, 2, 55, 42)];
+    
+    // Title
+    [[UIColor whiteColor] set];
+    [notification.title drawInRect:self.titleRect withFont:self.titleFont lineBreakMode:UILineBreakModeTailTruncation];
+    
+    // Message
+    [[UIColor whiteColor] set];
+    [notification.message drawInRect:self.messageRect withFont:self.messageFont lineBreakMode:UILineBreakModeTailTruncation];
 }
 
 @end
