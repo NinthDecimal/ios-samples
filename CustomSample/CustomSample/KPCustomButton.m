@@ -10,10 +10,12 @@
 
 @implementation KPCustomButton
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
     if (self) {
+        [self setBackgroundColor:[UIColor clearColor]];
+        [self setBackgroundImage:[UIImage imageNamed:@"button.png"] forState:UIControlStateNormal];
+        
         //sets up button's objects' frames
         self.notificationIcon = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 60, 45)];
         self.notificationTitle = [[UILabel alloc]initWithFrame:CGRectMake(80, 9, 200, 20)];
@@ -30,11 +32,10 @@
         self.notificationMessage.backgroundColor = [UIColor clearColor];
         self.notificationIcon.backgroundColor = [UIColor clearColor];
         
-        //adds objects to button 
+        //adds objects to button
         [self addSubview:self.notificationTitle];
         [self addSubview:self.notificationMessage];
         [self addSubview:self.notificationIcon];
-
     }
     return self;
 }

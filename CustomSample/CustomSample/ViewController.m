@@ -33,16 +33,7 @@ NSString *const kNotificationIntegrated = @"Integrated Notification";
     self.pickerView.dataSource = self;
     self.pickerView.delegate = self;
     
-    //setting frame, image, and action of Integrated Notification 
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.redeemButton = [[KPCustomButton alloc] initWithFrame:CGRectMake(20, 200, 278, 50)];
-    }
-    else {
-        self.redeemButton = [[KPCustomButton alloc] initWithFrame:CGRectMake(245, 480, 278, 50)];
-    }
-    
-    [self.redeemButton setBackgroundImage:[UIImage imageNamed:@"button.png"] forState:UIControlStateNormal];
-    [self.redeemButton addTarget:self action:@selector(integratedTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+    [self.redeemButton setHidden:YES];
 }
 
 - (IBAction)callMoment:(id)sender {
@@ -113,7 +104,7 @@ NSString *const kNotificationIntegrated = @"Integrated Notification";
             //removing Notification (this method uses a button instead)
             [poptart setNotification:nil];
             //adding button to the view
-            [self.view addSubview:self.redeemButton];
+            [self.redeemButton setHidden:NO];
         }
     }];
 }
@@ -136,9 +127,9 @@ NSString *const kNotificationIntegrated = @"Integrated Notification";
 }
 
 //removes button after tapped
-- (void)integratedTouchUpInside:(id)sender {
+- (IBAction)ntegratedTouchUpInside:(id)sender {
+    [self.redeemButton setHidden:YES];
     [self.savedPoptart show];
-    [self.redeemButton removeFromSuperview];
 }
 
 //setting up pickerview

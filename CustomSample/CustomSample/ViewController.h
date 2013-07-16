@@ -18,7 +18,7 @@
 
 @property (nonatomic, retain) IBOutlet UITextField *momentField;
 @property (nonatomic, retain) IBOutlet UIPickerView *pickerView;
-@property (nonatomic, retain) KPCustomButton * redeemButton;
+@property (nonatomic, retain) IBOutlet KPCustomButton * redeemButton;
 
 @end
 
