@@ -10,9 +10,9 @@
 
 @interface KPCustomButton : UIButton
 
-@property (strong, nonatomic) UILabel *notificationTitle;
-@property (strong, nonatomic) UILabel *notificationMessage;
-@property (strong, nonatomic) UIImageView *notificationIcon;
+@property (strong, nonatomic) UILabel *title;
+@property (strong, nonatomic) UILabel *message;
+@property (strong, nonatomic) UIImageView *icon;
 
 -(void)setPoptart:(KPPoptart *)poptart;
 
