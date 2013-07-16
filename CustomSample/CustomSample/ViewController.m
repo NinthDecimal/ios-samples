@@ -41,13 +41,40 @@ NSString *const kNotificationIntegrated = @"Integrated Notification";
 }
 
 - (IBAction)callMoment:(id)sender {
-    //checking for type of moment
-    if ([self.notifType isEqualToString:kNotificationDefault])
-        [self normal];
-    else if ([self.notifType isEqualToString:kNotificationCustom])
-        [self customBanner];
-    else
-        [self customButton];
+    void (^handler)(KPPoptart *, NSError *);
+    
+    if (![self.notifType isEqualToString:kNotificationIntegrated]) {
+        // Default handler
+        handler = ^(KPPoptart *poptart, NSError *error) {
+            if (error) {
+                [self didReceiveError:error];
+            }
+            else{
+                [poptart show];
+            }
+        };
+    } else {
+        // Integrated handler
+        handler = ^(KPPoptart *poptart, NSError *error) {
+            if (error) {
+                [self didReceiveError:error];
+            }
+            if (poptart) {
+                self.savedPoptart = poptart;
+                //sending poptart data to KPCusomButton
+                [self.redeemButton setPoptart:poptart];
+                //removing Notification (this method uses a button instead)
+                [poptart setNotification:nil];
+                //adding button to the view
+                [self.redeemButton setHidden:NO];
+                [UIView animateWithDuration:ANIMATION_DURATION animations:^{
+                    self.redeemButton.alpha = 1.0;
+                }];
+            }
+        };
+    }
+    
+    [[Kiip sharedInstance] saveMoment:self.momentField.text withCompletionHandler:handler];
 }
 
 //setting up pickerview
@@ -69,51 +96,6 @@ NSString *const kNotificationIntegrated = @"Integrated Notification";
     }
     //turning on custom notification if the notification type is custom notification 
     [((AppDelegate *)[UIApplication sharedApplication].delegate) toggleNotification:[self.notifType isEqualToString:kNotificationCustom]];
-}
-
--(void)normal {
-    //method with block for completion handler; if error, error message is show. Otherwise, a poptart is shown
-    [[Kiip sharedInstance] saveMoment:self.momentField.text withCompletionHandler:^(KPPoptart *poptart, NSError *error) {
-        if (error) {
-            [self didReceiveError:error];
-        }
-        else{
-            [poptart show];
-        }
-    }];
-}
-
--(void)customBanner {
-    //method with block for completion handler; if error, error message is show. Otherwise, a poptart is shown
-    [[Kiip sharedInstance] saveMoment:self.momentField.text withCompletionHandler:^(KPPoptart *poptart, NSError *error) {
-        if (error) {
-            [self didReceiveError:error];
-        }
-        else{
-            [poptart show];
-        }
-    }];
-}
-
--(void)customButton {
-    //method with block for completion handler; if error, error message is show. Otherwise, a poptart is shown
-    [[Kiip sharedInstance] saveMoment:self.momentField.text withCompletionHandler:^(KPPoptart *poptart, NSError *error) {
-        if (error) {
-            [self didReceiveError:error];
-        }
-        if (poptart) {
-            self.savedPoptart = poptart;
-            //sending poptart data to KPCusomButton
-            [self.redeemButton setPoptart:poptart];
-            //removing Notification (this method uses a button instead)
-            [poptart setNotification:nil];
-            //adding button to the view
-            [self.redeemButton setHidden:NO];
-            [UIView animateWithDuration:ANIMATION_DURATION animations:^{
-                self.redeemButton.alpha = 1.0;
-            }];
-        }
-    }];
 }
 
 //returns error message
