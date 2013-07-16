@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <KiipSDK/KPPoptart.h>
 
 @interface KPCustomButton : UIButton
 

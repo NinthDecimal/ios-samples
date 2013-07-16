@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Ash Bhat. All rights reserved.
 //
 
+#import <KiipSDK/KPPoptart.h>
+
 #import "KPCustomButton.h"
 
 @implementation KPCustomButton
@@ -41,7 +43,7 @@
 }
 
 //called in ViewController, sets info from poptart to objects
--(void)setPoptart:(KPPoptart *)poptart{
+- (void)setPoptart:(KPPoptart *)poptart {
     [self.notificationTitle setText:poptart.notification.title];
     [self.notificationIcon setImage:poptart.notification.icon];
     [self.notificationMessage setText:poptart.notification.message];

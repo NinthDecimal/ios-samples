@@ -6,8 +6,10 @@
 //  Copyright (c) 2013 Ash Bhat. All rights reserved.
 //
 
+#import <KiipSDK/KiipSDK.h>
+
 #import "ViewController.h"
-#import "KPCustomNotificationView.h"
+#import "AppDelegate.h"
 
 #define KEYBOARD_HEIGHT_PORTRAIT 216
 #define KEYBOARD_HEIGHT_LANDSCAPE 162

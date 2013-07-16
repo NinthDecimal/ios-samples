@@ -7,8 +7,9 @@
 //
 
 #import <KiipSDK/KPNotificationView.h>
-#import <KiipSDK/KPPoptart.h>
+
 @interface KPCustomNotificationView : KPNotificationView
+
 @property (strong, nonatomic) UILabel *title;
 @property (strong, nonatomic) UILabel *message;
 @property (strong, nonatomic) UIImageView *icon;

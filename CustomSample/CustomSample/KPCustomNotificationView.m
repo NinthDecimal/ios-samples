@@ -6,7 +6,10 @@
 //  Copyright (c) 2013 Kiip, Inc. All rights reserved.
 //
 
+#import <KiipSDK/KPPoptart.h>
+
 #import "KPCustomNotificationView.h"
+
 #define HEIGHT 46
 
 @implementation KPCustomNotificationView

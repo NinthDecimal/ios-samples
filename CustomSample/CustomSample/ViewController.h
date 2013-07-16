@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <KiipSDK/KiipSDK.h>
-#import "AppDelegate.h"
+
 #import "KPCustomButton.h"
-@interface ViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource,UITextFieldDelegate>
+
+@interface ViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate>
 
 @property (nonatomic, retain) NSArray *dataArray;
 @property (nonatomic, retain) NSString *notifType;

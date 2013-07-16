@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <KiipSDK/KiipSDK.h>
-#import "KPCustomNotificationView.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate,KiipDelegate>
+@class KPCustomNotificationView;
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, KiipDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UIViewController *viewController;
