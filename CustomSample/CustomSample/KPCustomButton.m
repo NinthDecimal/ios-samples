@@ -16,7 +16,7 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         [self setBackgroundColor:[UIColor clearColor]];
-        [self setBackgroundImage:[[UIImage imageNamed:@"button.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(6, 6, 6, 6)] forState:UIControlStateNormal];
+        [self setBackgroundImage:[[UIImage imageNamed:@"button"] stretchableImageWithLeftCapWidth:6 topCapHeight:6] forState:UIControlStateNormal];
         
         //sets up button's objects' frames
         self.icon = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 60, 45)];
