@@ -37,7 +37,7 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIPickerView" id="354679271">
+					<object class="IBUIPickerView" id="1008034486">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">266</int>
 						<string key="NSFrame">{{0, 288}, {320, 216}}</string>
@@ -48,13 +48,13 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<bool key="IBUIShowsSelectionIndicator">YES</bool>
 					</object>
-					<object class="IBUIButton" id="59021494">
+					<object class="IBUIButton" id="474182057">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">290</int>
 						<string key="NSFrame">{{20, 58}, {280, 44}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="404692141"/>
+						<reference key="NSNextKeyView" ref="618990894"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -84,13 +84,13 @@
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
-					<object class="IBUITextField" id="46854394">
+					<object class="IBUITextField" id="484240706">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">290</int>
 						<string key="NSFrame">{{20, 20}, {280, 30}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="59021494"/>
+						<reference key="NSNextKeyView" ref="474182057"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -102,7 +102,7 @@
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MAA</bytes>
-							<object class="NSColorSpace" key="NSCustomColorSpace" id="512046853">
+							<object class="NSColorSpace" key="NSCustomColorSpace" id="498043031">
 								<int key="NSID">2</int>
 							</object>
 						</object>
@@ -121,18 +121,18 @@
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
-					<object class="IBUIView" id="404692141">
+					<object class="IBUIView" id="618990894">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">290</int>
 						<string key="NSFrame">{{20, 109}, {280, 50}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="354679271"/>
+						<reference key="NSNextKeyView" ref="1008034486"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MQA</bytes>
-							<reference key="NSCustomColorSpace" ref="512046853"/>
+							<reference key="NSCustomColorSpace" ref="498043031"/>
 						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
@@ -140,7 +140,7 @@
 				<string key="NSFrame">{{0, 64}, {320, 504}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="46854394"/>
+				<reference key="NSNextKeyView" ref="484240706"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MC42NjY2NjY2NjY3AA</bytes>
@@ -183,7 +183,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">momentField</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="46854394"/>
+						<reference key="destination" ref="484240706"/>
 					</object>
 					<int key="connectionID">57</int>
 				</object>
@@ -191,7 +191,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">pickerView</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="354679271"/>
+						<reference key="destination" ref="1008034486"/>
 					</object>
 					<int key="connectionID">58</int>
 				</object>
@@ -199,14 +199,14 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">redeemButton</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="404692141"/>
+						<reference key="destination" ref="618990894"/>
 					</object>
 					<int key="connectionID">61</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">callMoment:</string>
-						<reference key="source" ref="59021494"/>
+						<reference key="source" ref="474182057"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -214,12 +214,12 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">ntegratedTouchUpInside:</string>
-						<reference key="source" ref="404692141"/>
+						<string key="label">integratedTouchUpInside:</string>
+						<reference key="source" ref="618990894"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
-					<int key="connectionID">62</int>
+					<int key="connectionID">63</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -234,10 +234,10 @@
 						<int key="objectID">1</int>
 						<reference key="object" ref="191373211"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="354679271"/>
-							<reference ref="46854394"/>
-							<reference ref="59021494"/>
-							<reference ref="404692141"/>
+							<reference ref="1008034486"/>
+							<reference ref="484240706"/>
+							<reference ref="474182057"/>
+							<reference ref="618990894"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -254,25 +254,25 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">39</int>
-						<reference key="object" ref="354679271"/>
+						<reference key="object" ref="1008034486"/>
 						<array class="NSMutableArray" key="children"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">44</int>
-						<reference key="object" ref="59021494"/>
+						<reference key="object" ref="474182057"/>
 						<array class="NSMutableArray" key="children"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">47</int>
-						<reference key="object" ref="46854394"/>
+						<reference key="object" ref="484240706"/>
 						<array class="NSMutableArray" key="children"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">60</int>
-						<reference key="object" ref="404692141"/>
+						<reference key="object" ref="618990894"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>
@@ -293,7 +293,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">62</int>
+			<int key="maxID">63</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -310,15 +310,15 @@
 					<string key="superclassName">UIViewController</string>
 					<dictionary class="NSMutableDictionary" key="actions">
 						<string key="callMoment:">id</string>
-						<string key="ntegratedTouchUpInside:">id</string>
+						<string key="integratedTouchUpInside:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
 						<object class="IBActionInfo" key="callMoment:">
 							<string key="name">callMoment:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-						<object class="IBActionInfo" key="ntegratedTouchUpInside:">
-							<string key="name">ntegratedTouchUpInside:</string>
+						<object class="IBActionInfo" key="integratedTouchUpInside:">
+							<string key="name">integratedTouchUpInside:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 					</dictionary>

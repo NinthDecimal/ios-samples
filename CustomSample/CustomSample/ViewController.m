@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "KPCustomNotificationView.h"
 
+#define KEYBOARD_HEIGHT_PORTRAIT 216
+#define KEYBOARD_HEIGHT_LANDSCAPE 162
+#define ANIMATION_DURATION 0.3 // 300 ms
 
 //types of notifications 
 NSString *const kNotificationDefault = @"Default Notification";
@@ -33,6 +36,7 @@ NSString *const kNotificationIntegrated = @"Integrated Notification";
     self.pickerView.dataSource = self;
     self.pickerView.delegate = self;
     
+    self.redeemButton.alpha = 0.0f;
     [self.redeemButton setHidden:YES];
 }
 
@@ -105,6 +109,9 @@ NSString *const kNotificationIntegrated = @"Integrated Notification";
             [poptart setNotification:nil];
             //adding button to the view
             [self.redeemButton setHidden:NO];
+            [UIView animateWithDuration:ANIMATION_DURATION animations:^{
+                self.redeemButton.alpha = 1.0;
+            }];
         }
     }];
 }
@@ -127,8 +134,12 @@ NSString *const kNotificationIntegrated = @"Integrated Notification";
 }
 
 //removes button after tapped
-- (IBAction)ntegratedTouchUpInside:(id)sender {
-    [self.redeemButton setHidden:YES];
+- (IBAction)integratedTouchUpInside:(id)sender {
+    [UIView animateWithDuration:ANIMATION_DURATION animations:^{
+        self.redeemButton.alpha = 0.0;
+    } completion:^(BOOL finished) {
+        [self.redeemButton setHidden:YES];
+    }];
     [self.savedPoptart show];
 }
 
@@ -142,9 +153,6 @@ NSString *const kNotificationIntegrated = @"Integrated Notification";
     [lblRow setBackgroundColor:[UIColor clearColor]];
     return lblRow;
 }
-
-#define KEYBOARD_HEIGHT_PORTRAIT 216;
-#define KEYBOARD_HEIGHT_LANDSCAPE 162;
 
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
     CGRect frame = self.pickerView.frame;
