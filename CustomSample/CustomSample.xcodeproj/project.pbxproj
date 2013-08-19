@@ -25,6 +25,7 @@
 		5EE35C70178CD8FE00C18D70 /* KPCustomNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE35C6E178CD86100C18D70 /* KPCustomNotificationView.m */; };
 		5EF15BD2178F5AF90087EAAB /* KPCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF15BD1178F5AF90087EAAB /* KPCustomButton.m */; };
 		EE39D14E1795E616005CD821 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE39D14C1795E616005CD821 /* ViewController.xib */; };
+		EEBDC8A517C2C345008F195C /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBDC8A417C2C345008F195C /* PassKit.framework */; };
 		EED2F98C1794A5CE00433F73 /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED2F98B1794A5CE00433F73 /* KiipSDK.framework */; };
 		EED2F98E1794A5DE00433F73 /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EED2F98D1794A5DE00433F73 /* KiipSDKResources.bundle */; };
 		EED2F9901794A5F400433F73 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED2F98F1794A5F400433F73 /* AdSupport.framework */; };
@@ -57,6 +58,7 @@
 		5EF15BD0178F5AF90087EAAB /* KPCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPCustomButton.h; sourceTree = "<group>"; };
 		5EF15BD1178F5AF90087EAAB /* KPCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPCustomButton.m; sourceTree = "<group>"; };
 		EE39D14D1795E616005CD821 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = CustomSample/en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		EEBDC8A417C2C345008F195C /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		EED2F98B1794A5CE00433F73 /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KiipSDK.framework; path = ../KiipSDK.framework; sourceTree = "<group>"; };
 		EED2F98D1794A5DE00433F73 /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KiipSDKResources.bundle; path = ../KiipSDK.framework/Resources/KiipSDKResources.bundle; sourceTree = "<group>"; };
 		EED2F98F1794A5F400433F73 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -67,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEBDC8A517C2C345008F195C /* PassKit.framework in Frameworks */,
 				EED2F9901794A5F400433F73 /* AdSupport.framework in Frameworks */,
 				5EE35C62178CD6F800C18D70 /* SystemConfiguration.framework in Frameworks */,
 				5EE35C60178CD6F000C18D70 /* QuartzCore.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		5EA941FE178CB88D000A22F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EEBDC8A417C2C345008F195C /* PassKit.framework */,
 				EED2F98B1794A5CE00433F73 /* KiipSDK.framework */,
 				EED2F98D1794A5DE00433F73 /* KiipSDKResources.bundle */,
 				EED2F98F1794A5F400433F73 /* AdSupport.framework */,
