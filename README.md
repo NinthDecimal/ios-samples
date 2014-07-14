@@ -2,4 +2,4 @@
 
 ## We've moved! 
 
-Check github.com/kiip/kiip-samples for the latest! 
+Check [our samples repo](http://github.com/kiip/kiip-samples) for the latest! 
